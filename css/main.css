@@ -1,0 +1,115 @@
+/***
+font-family: 'Lobster', cursive;
+font-family: 'Overlock', cursive;
+***/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: #FDF6C8;
+  font-family: 'Overlock', cursive;
+  background-color: #fdf6c8;
+  background-image: url(https://www.transparenttextures.com/patterns/subtle-carbon.png);
+}
+p {
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+
+}
+.display {
+  margin: 20px 10px 10px;
+  padding: 40px 140px;
+  box-shadow: 5px 5px 30px inset #F4D977;
+  border-radius: 40px;
+}
+
+.btns {
+  margin: 30px 20px 10px;
+}
+.additional {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#current {
+  font-size: 70px;
+}
+button {
+  color: #FFFFFE;
+  font-family: 'Overlock', cursive;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+}
+button:hover {
+
+}
+
+button:click {
+
+}
+.btn__plus {
+  background-color: #399597;
+}
+.btn__minus {
+  background-color: #ED6A50;
+}
+.btn__reset {
+  background-color: #A52A6B;
+}
+.btn__add {
+  background-color: #E62652;
+}
+#nrInput {
+  font-family: 'Overlock', cursive;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  color: #CBCCCD;
+}
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+.effect.effect-5 {
+  transition: all 0.5s linear 0s;
+}
+.effect.effect-5:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 50% 50% 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-5:hover {
+  text-indent: 30px;
+}
+.effect.effect-5:hover:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  text-indent: 0;
+}
